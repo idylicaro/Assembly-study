@@ -13,7 +13,7 @@ global _start:
 
 _start:
     mov edx, len
-    mov eex, msg
+    mov ecx, msg
     mov ebx, 1
     mov eax, 4
     int 0x80
