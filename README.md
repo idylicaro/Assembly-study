@@ -31,6 +31,8 @@ creating executable: ```ld -s -o hello hello.o```
     |reg16, reg_seg      | mov Ax,  Ds  |
     |memory, reg_seg     | mov var, Ds  |
 
+---
+### Labels
 - labels in assembly works like functions in others languages
 exemple:
 
@@ -69,3 +71,39 @@ exemple:
 
     ```
     - i have two labels that using equal names, but this labels are locals label.
+
+---
+
+### Memory and Define
+
+- 1 byte <=> 8 bits
+
+DB  = Define Byte          -> allocates 1 byte
+
+DW = Define Word           -> allocates 2 bytes
+
+DD  = Define Doubleword    -> allocates 4 bytes
+
+DQ  = Define Quadword      -> allocates  8 bytes
+
+DT  = Define Ten           -> allocates 10 bytes
+
+- sintax of an instruction in assembly for allocates memory: ``` name_of_variable instruction_of_define```
+exemple:
+    ``` varword1 DB 'A' ```
+
+- a byte can represent 2 ^ 8 = 256 characters, in hexadecimal, we can represent these 256 characters using the numbers 00H through FFH
+
+- Reserve memory:
+RESB  = Reserve Byte           -> Reserve 1 byte
+
+RESW  = Reserve Word           -> Reserve 2 bytes
+
+RESD  = Reserve Doubleword     -> Reserve 4 bytes
+
+RESQ  = Reserve Quadword       -> Reserve 8 bytes
+
+REST  = Reserve Ten            -> Reserve 10 bytes
+
+
+---
