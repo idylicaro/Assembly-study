@@ -4,6 +4,7 @@
 
 in linux
 command to compile with nasm: ```nasm -f elf64 hello.asm```
+
 creating executable: ```ld -s -o hello hello.o```
  
 
@@ -48,9 +49,10 @@ exemple2:
         inc numberVar
     ```
 
-- now i can increment the numberVar just only calling this label
 
+- now i can increment the numberVar just only calling this label
 - exist two types of labels, the local labels and default labels.
+
 defaultLabel: (not have dot)
 .localLabel:(have dot)
 
@@ -70,7 +72,8 @@ exemple:
     ;... code ...
 
     ```
-    - i have two labels that using equal names, but this labels are locals label.
+
+- i have two labels that using equal names, but this labels are locals label.
 
 ---
 
