@@ -105,5 +105,8 @@ RESQ  = Reserve Quadword       -> Reserve 8 bytes
 
 REST  = Reserve Ten            -> Reserve 10 bytes
 
-
----
+- sintax to allocates memory: ``` name_of_variable directive_res_units_unit ```
+exemple:
+    ``` var1 RESB 1 ; 1 byte ```
+    ``` var2 RESB 2 ; 2 byte ```
+    ``` var3 RESW 3 ; 3*2= 6 byte ```
